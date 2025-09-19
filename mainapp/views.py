@@ -5,17 +5,11 @@ def index(request):
 
 
 def contacts(request):
-    return render(request, 'contacts.html')
+    title = 'Контакты hajagan kajaradagan'
 
+    context = {
+        'title': title,
+    }
+    return render(request, 'contacts.html', context)
 
-def about(request):
-    return render(request, 'about.html')
-
-
-def products(request):
-    return render(request, 'products.html')
-
-
-def productone(request):
-    return render(request, 'productone.html')
 
