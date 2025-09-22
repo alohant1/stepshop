@@ -42,5 +42,5 @@ def about(request):
     context = {
         'title': title,
     }
-    return render(request, 'products.html', context)
+    return render(request, 'about.html', context)
 
